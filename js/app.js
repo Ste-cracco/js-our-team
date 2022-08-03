@@ -32,6 +32,16 @@ const card = [
     },
 ]
 
-for(let key in card) {
-    console.log(card[key])
+// for(let key in card) {
+//     console.log(card[key])
+// }
+
+const UlElement = document.querySelector('.container_card')
+
+function creazioneLi (card) {
+    UlElement.innerHTML += `<li>  ${card.nome} --- ${card.ruolo} --- ${card.immagine} </li>`
+}
+
+for (i = 0; i < card.length; i++) {
+    creazioneLi(card[i])
 }
