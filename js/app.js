@@ -39,9 +39,10 @@ const card = [
 const UlElement = document.querySelector('.container_card')
 
 function creazioneLi (card) {
-    UlElement.innerHTML += `<li>  ${card.nome} --- ${card.ruolo} --- ${card.immagine} </li>`
+    UlElement.innerHTML += `<li>  ${card.nome} --- ${card.ruolo} --- <img src="${card.immagine}"> </li>`
 }
 
 for (i = 0; i < card.length; i++) {
-    creazioneLi(card[i])
+    creazioneLi(card[i])        
 }
+
